@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from reporting import generate_report,convert_md_to_pdf
 import seaborn as sns
 
-app_path = r'C:\Users\WU425NK\OneDrive - EY\Desktop\Python_training\Capstone_Project\cap_app_inventory.csv'
-compliance_path = r'C:\Users\WU425NK\OneDrive - EY\Desktop\Python_training\Capstone_Project\cap_compliance_status.csv'
+app_path = 'Your file path'
+compliance_path = 'Your file path'
 def main():
     app_df = ingest_csv(app_path)  # Ingest app data
     compliance_df = ingest_csv(compliance_path)  # Ingest compliance data
