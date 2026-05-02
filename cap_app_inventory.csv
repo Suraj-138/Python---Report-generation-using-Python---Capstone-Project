@@ -1,0 +1,6 @@
+App_ID,App_Name,Department,Primary_Stakeholder,Hosting_Type
+APP-001,Payroll Portal,HR,Sarah Jenkins,On-Premise
+APP-002,Customer CRM,Sales,Michael Chen,Cloud-AWS
+APP-003,Inventory Sync,Logistics,Sarah Jenkins,Cloud-Azure
+APP-004,Global VPN,IT Security,David Miller,Hybrid
+APP-005,Legacy Ledger,Finance,Robert Wilson,On-Premise
