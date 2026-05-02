@@ -40,24 +40,24 @@ def main():
         plt.tight_layout()
         # plt.show()
         # save the plot in output directory
-        plt.savefig('C:/Users/WU425NK/OneDrive - EY/Desktop/Python_training/Capstone_Project/compliance_score_by_department.png')
+        plt.savefig('Your output file path')
 
     else:
         print("Required columns for bar chart not found in merged data.")
 
     # Generate a report using the reporting module
     generate_report(
-        filename='C:/Users/WU425NK/OneDrive - EY/Desktop/Python_training/Capstone_Project/compliance_report.md',
+        filename='Your report.md file path',
         summary_data='This report summarizes the compliance status of applications across departments.',
         compliance_data=merged_df[['App_Name', 'Department', 'Compliance_Score', 'Audit_Date']],
         compliance_percentage=compliance_percentage,
-        chart_path='C:/Users/WU425NK/OneDrive - EY/Desktop/Python_training/Capstone_Project/compliance_score_by_department.png'
+        chart_path='Your output file path'
         #chart_path='../output/compliance_score_by_department.png'
     )
 
     # Convert the markdown report to PDF
-    #markdown_to_pdf(markdown_file='C:/Users/WU425NK/OneDrive - EY/Desktop/Python_training/Capstone_Project/compliance_report.md', pdf_file='C:/Users/WU425NK/OneDrive - EY/Desktop/Python_training/Capstone_Project/compliance_report.pdf')
-    convert_md_to_pdf(input_md_path='C:/Users/WU425NK/OneDrive - EY/Desktop/Python_training/Capstone_Project/compliance_report.md', output_pdf_path='C:/Users/WU425NK/OneDrive - EY/Desktop/Python_training/Capstone_Project/compliance_report.pdf')
+    
+    convert_md_to_pdf(input_md_path='Your report.md file path', output_pdf_path='Your report.pdf file path')
 
 if __name__ == "__main__":
     main()
