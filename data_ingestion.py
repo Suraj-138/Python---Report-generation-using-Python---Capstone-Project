@@ -12,7 +12,6 @@ def ingest_csv(file_path: str) -> pd.DataFrame:
     Returns:
     pd.DataFrame: The ingested data as a DataFrame.
     """
-    #file_path = r'C:\Users\WU425NK\OneDrive - EY\Desktop\Python_training\Capstone_Project\cap_app_inventory.csv'
     try:
         df = pd.read_csv(file_path)
         print(f"Successfully ingested data from {file_path}")
